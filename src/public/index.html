@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Conectar con el servidor de Google Fonts para cargar fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    
+    <!-- Cargar la hoja de estilos de Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    
+    <!-- Cargar la fuente Poppins desde Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Cargar el archivo de estilos CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Título de la página -->
+    <title>App</title>
+  </head>
+  <body>
+    <!-- Contenedor de fondo con formas decorativas -->
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <!-- Contenedor para los formularios de autenticación -->
+    <div id="authContainer" class="auth-container">
+      
+      <!-- Formulario de registro de nuevo usuario -->
+      <form id="formRegister" class="registro">
+        <h3>Nuevo Usuario</h3>
+        <input id="r-name" name="r-name" type="text" placeholder="Name" />
+        <input id="r-email" name="r-email" type="text" placeholder="Email" />
+        <input
+          id="r-password"
+          name="r-password"
+          type="password"
+          placeholder="Password"
+        />
+        <input id="r-phone" name="r-phone" type="tel" placeholder="Phone" />
+        
+        <!-- Selección de rol corregida -->
+        <select id="r-rol" name="r-rol">
+          <option value="cliente">Cliente</option>
+          <option value="administrador">Administrador</option>
+        </select>
+        
+        <button type="button" id="createUser">Registro</button>
+        <p id="showFormLogin">¿Ya tiene cuenta? Iniciar Sesión</p>
+      </form>
+
+      <!-- Formulario de inicio de sesión -->
+      <form id="formLogin" class="registro" style="display: none;">
+        <h3>Iniciar Sesión</h3>
+        <input id="l-email" name="l-email" type="text" placeholder="Email" />
+        <input
+          id="l-password"
+          name="l-password"
+          type="password"
+          placeholder="Password"
+        />
+        <!-- Agregar campo de selección de rol en el formulario de inicio de sesión -->
+        <select id="l-rol" name="l-rol">
+          <option value="cliente">Cliente</option>
+          <option value="administrador">Administrador</option>
+        </select>
+        
+        <button type="button" id="loginUser">Iniciar Sesión</button>
+        <p id="showFormRegister">¿No tiene cuenta? Registrarse</p>
+      </form>
+    </div>
+    
+    <!-- Panel de Control (oculto por defecto) -->
+    <div class="dashboard" style="display: none;">
+      <h1>Panel de Control</h1>
+      <button id="logout">Cerrar Sesión</button>
+      <div id="productList" class="product-list">
+        <!-- Aquí se mostrarán los productos -->
+      </div>
+    </div>
+    
+    <!-- Cargar los scripts JavaScript -->
+    <script src="./script.js"></script>
+    <script src="./dashboard.js"></script>
+  </body>
+</html>
