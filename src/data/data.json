@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Smartphone X100",
+        "description": "Smartphone con pantalla OLED de 6.5\", 128GB de almacenamiento",
+        "price": 799000,
+        "category": "Smartphones"
+    },
+    {
+        "name": "Laptop Pro 15",
+        "description": "Laptop con procesador i7, 16GB RAM, 512GB SSD",
+        "price": 1200000,
+        "category": "Laptops"
+    },
+    {
+        "name": "Tablet S8",
+        "description": "Tablet de 10\" con 64GB de almacenamiento y soporte para lápiz digital",
+        "price": 350000,
+        "category": "Tablets"
+    },
+    {
+        "name": "Smartwatch G5",
+        "description": "Reloj inteligente con monitor de ritmo cardíaco y GPS",
+        "price": 199000,
+        "category": "Wearables"
+    },
+    {
+        "name": "Auriculares ANC 500",
+        "description": "Auriculares con cancelación activa de ruido y sonido Hi-Fi",
+        "price": 150000,
+        "category": "Audio"
+    },
+    {
+        "name": "Monitor 4K Ultra",
+        "description": "Monitor de 27\" con resolución 4K y 144Hz",
+        "price": 450000,
+        "category": "Monitores"
+    },
+    {
+        "name": "Teclado Mecánico MX",
+        "description": "Teclado mecánico RGB con switches Cherry MX Red",
+        "price": 1200000,
+        "category": "Accesorios"
+    },
+    {
+        "name": "Mouse Gaming Z9",
+        "description": "Mouse para gaming con sensor óptico de 16000 DPI",
+        "price": 80000,
+        "category": "Accesorios"
+    },
+    {
+        "name": "Cámara DSLR X500",
+        "description": "Cámara digital SLR con sensor de 24.2MP y grabación 4K",
+        "price": 900000,
+        "category": "Cámaras"
+    },
+    {
+        "name": "Impresora Láser L200",
+        "description": "Impresora láser monocromática con conectividad Wi-Fi",
+        "price": 180000,
+        "category": "Impresoras"
+    },
+    {
+        "name": "Altavoz Bluetooth Boom",
+        "description": "Altavoz portátil con sonido estéreo y resistencia al agua IPX7",
+        "price": 100000,
+        "category": "Audio"
+    },
+    {
+        "name": "Router WiFi 6 Max",
+        "description": "Router con soporte WiFi 6 y velocidad hasta 9.6Gbps",
+        "price": 220000,
+        "category": "Redes"
+    },
+    {
+        "name": "SSD Externo 1TB",
+        "description": "Disco SSD externo de 1TB con conectividad USB 3.2",
+        "price": 150000,
+        "category": "Almacenamiento"
+    },
+    {
+        "name": "TV 55\" 4K UHD",
+        "description": "Televisor inteligente de 55\" con resolución 4K y HDR",
+        "price": 700000,
+        "category": "Televisores"
+    },
+    {
+        "name": "Drone Pro X",
+        "description": "Drone con cámara 4K y estabilización de 3 ejes",
+        "price": 800000,
+        "category": "Drones"
+    }
+]
