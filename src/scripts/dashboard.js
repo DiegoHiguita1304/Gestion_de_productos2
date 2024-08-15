@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
 //         window.location.href = 'index.html';
 //     }
 
-//     // Cargar productos desde data.json
-//     fetch('data.json')
-//         .then(response => response.json())
-//         .then(products => {
+    // Cargar productos desde data.json
+    fetch('data.json')
+        .then(response => response.json())
+        .then(products => {
 
 //             // Obtiene categorías únicas de los productos
 //             const uniqueCategories = [...new Set(products.map(p => p.category))];
@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
 //                     console.log(`Precio: ${product.price}`);
 //                     console.log(`Categoría: ${product.category}`);
 //                     console.log('------------------------');
-//                 });
-//             }
+                });
+            // }
 
 //             // Función para filtrar productos según los criterios establecidos
 //             function filterProducts() {
