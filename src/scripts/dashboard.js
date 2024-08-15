@@ -1,24 +1,26 @@
-// // Espera a que el DOM se haya cargado completamente antes de ejecutar el script
-// document.addEventListener('DOMContentLoaded', function () {
-//     console.log('DOM completamente cargado y analizado');
+// Espera a que el DOM se haya cargado completamente antes de ejecutar el script
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM completamente cargado y analizado');
 
-//     // Obtiene referencias a los elementos del DOM
-//     const logoutButton = document.getElementById('logout');
-//     const productList = document.getElementById('productList');
-//     const applyFiltersButton = document.getElementById('applyFiltersButton');
-//     const filterNameInput = document.getElementById('filterNameInput');
-//     const filterCategoryInput = document.getElementById('filterCategoryInput');
-//     const minPriceInput = document.getElementById('minPriceInput');
-//     const maxPriceInput = document.getElementById('maxPriceInput');
-//     const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    // Obtiene referencias a los elementos del DOM
+    const logoutButton = document.getElementById('logout');
+    const productList = document.getElementById('productList');
+    const applyFiltersButton = document.getElementById('applyFiltersButton');
+    const filterNameInput = document.getElementById('filterNameInput');
+    const filterCategoryInput = document.getElementById('filterCategoryInput');
+    const minPriceInput = document.getElementById('minPriceInput');
+    const maxPriceInput = document.getElementById('maxPriceInput');
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
-//     // Verifica que el elemento de selección de categoría esté en el DOM
-//     if (!filterCategoryInput) {
-//         console.error('Elemento filterCategoryInput no encontrado en el DOM');
-//         return;
-//     } else {
-//         console.log('Elemento filterCategoryInput encontrado en el DOM');
-//     }
+    // Verifica que el elemento de selección de categoría esté en el DOM
+    if (!filterCategoryInput) {
+        console.error('Elemento filterCategoryInput no encontrado en el DOM');
+        return;
+    } else {
+        console.log('Elemento filterCategoryInput encontrado en el DOM');
+    }
+
+})
 
 //     if (loggedInUser) {
 //         // Mostrar el nombre y rol en el panel de control
