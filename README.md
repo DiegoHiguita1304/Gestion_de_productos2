@@ -52,7 +52,7 @@ src/
 **userController.js/**: 
 * Gestiona la autenticación del usuario, incluido el registro y el inicio de sesión. Valida la entrada del usuario y almacena/recupera datos del usuario.
 
-## Models/**:
+## Models:
 * Contiene los modelos que representan los datos y las operaciones sobre ellos.
 
 **productModel.js/**: 
