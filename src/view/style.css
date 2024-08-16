@@ -187,5 +187,25 @@ body {
   padding: 10px 20px;
 }
 
+/* Estilo para el botón "Volver a la lista" */
+#back-to-list {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #ff512f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #back-to-list:hover {
+    background-color: #e64a19; /* Cambia el color de fondo al pasar el cursor */
+  }
+  
+
 /* Importar la fuente Poppins desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
