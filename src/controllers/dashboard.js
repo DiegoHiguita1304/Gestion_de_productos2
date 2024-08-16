@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const maxPriceInput = document.getElementById('maxPriceInput');
     const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
-     // Verifica que el elemento de selección de categoría esté en el DOM
+
+    // Verifica que el elemento de selección de categoría esté en el DOM
     if (!filterCategoryInput) {
         console.error('Elemento filterCategoryInput no encontrado en el DOM');
         return;
@@ -51,13 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
             // Función para renderizar productos en la interfaz
             function renderProducts(productsToRender) {
                 productList.innerHTML = productsToRender.map(product => `
-                    <div class="product">
-                        <h2>${product.name}</h2>
-                        <p>${product.description}</p>
-                        <p>Precio: ${formatNumber(product.price)}</p>
-                        <p>Categoría: ${product.category}</p>
-                    </div>
-                `).join('');
+        <div class="product" data-id="${product.id}">
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            <p>Precio: ${formatNumber(product.price)}</p>
+            <p>Categoría: ${product.category}</p>
+        </div>
+    `).join('');
 
                 // Limpia la consola y muestra los productos filtrados
                 console.clear();
@@ -69,7 +70,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     console.log(`Categoría: ${product.category}`);
                     console.log('------------------------');
                 });
+
+                // Agrega evento de clic a cada producto después de renderizar
+                document.querySelectorAll('.product').forEach(productElement => {
+                    productElement.addEventListener('click', function () {
+                        const productId = this.getAttribute('data-id');
+                        const url = `./productDetails.html?id=${productId}`;
+                        console.log('Redirigiendo a:', url); // Imprime la URL en la consola
+                        window.location.href = url;
+                    });
+                });
             }
+
 
             function filterProducts() {
                 const filters = {
@@ -83,12 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 renderProducts(filteredProducts);
             }
 
-             // Agrega eventos a los elementos de filtro
+            // Agrega eventos a los elementos de filtro
             filterNameInput.addEventListener('input', filterProducts);
             filterCategoryInput.addEventListener('change', filterProducts);
             applyFiltersButton.addEventListener('click', filterProducts);
 
-             // Renderiza productos al cargar la página
+            // Renderiza productos al cargar la página
             renderProducts(products);
         })
         .catch(error => {
@@ -96,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     // Agrega evento al botón de cerrar sesión
-        if (logoutButton) {
+    if (logoutButton) {
         logoutButton.addEventListener('click', function () {
             localStorage.removeItem('loggedInUser');
             window.location.href = './index.html';
