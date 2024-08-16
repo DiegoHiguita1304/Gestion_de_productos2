@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const showFormRegister = document.getElementById('showFormRegister');
     const authContainer = document.getElementById('authContainer');
 
+
     // Cambiar al formulario de inicio de sesión cuando se haga clic en "Iniciar Sesión"
     if (showFormLogin) {
         showFormLogin.addEventListener('click', function () {

@@ -13,23 +13,30 @@ document.addEventListener('DOMContentLoaded', function () {
     const maxPriceInput = document.getElementById('maxPriceInput');
     const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
+     // Verifica que el elemento de selección de categoría esté en el DOM
     if (!filterCategoryInput) {
         console.error('Elemento filterCategoryInput no encontrado en el DOM');
         return;
     }
 
     if (loggedInUser) {
+        // Mostrar el nombre y rol en el panel de control
         const dashboard = document.querySelector('.dashboard');
         const userInfo = document.createElement('div');
         userInfo.innerHTML = `<p>Nombre: ${loggedInUser.name}</p><p>Rol: ${loggedInUser.rol}</p>`;
-        dashboard.insertBefore(userInfo, dashboard.firstChild);
+        dashboard.insertBefore(userInfo, dashboard.firstChild); // Inserta la información al principio del panel
     } else {
-        window.location.href = '/index.html';
+        // Si no hay un usuario registrado, redirigir al inicio de sesión
+        window.location.href = './index.html';
     }
 
     loadProducts()
         .then(products => {
+
+            // Obtiene categorías únicas de los productos
             const uniqueCategories = [...new Set(products.map(p => p.category))];
+
+            // Agrega las opciones de categorías al menú desplegable
             uniqueCategories.forEach(category => {
                 const option = document.createElement('option');
                 option.value = category;
@@ -38,9 +45,10 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             function formatNumber(number) {
-                return number.toLocaleString('es-CO');
+                return number.toLocaleString('es-CO')
             }
 
+            // Función para renderizar productos en la interfaz
             function renderProducts(productsToRender) {
                 productList.innerHTML = productsToRender.map(product => `
                     <div class="product">
@@ -51,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 `).join('');
 
+                // Limpia la consola y muestra los productos filtrados
                 console.clear();
                 console.log("Productos filtrados:");
                 productsToRender.forEach(product => {
@@ -74,20 +83,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 renderProducts(filteredProducts);
             }
 
+             // Agrega eventos a los elementos de filtro
             filterNameInput.addEventListener('input', filterProducts);
             filterCategoryInput.addEventListener('change', filterProducts);
             applyFiltersButton.addEventListener('click', filterProducts);
 
+             // Renderiza productos al cargar la página
             renderProducts(products);
         })
         .catch(error => {
             console.error('Error al cargar productos:', error);
         });
 
-    if (logoutButton) {
+    // Agrega evento al botón de cerrar sesión
+        if (logoutButton) {
         logoutButton.addEventListener('click', function () {
             localStorage.removeItem('loggedInUser');
-            window.location.href = 'index.html';
+            window.location.href = './index.html';
         });
     }
 });
