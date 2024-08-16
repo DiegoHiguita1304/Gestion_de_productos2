@@ -225,5 +225,13 @@ body {
     background-color: #e64a19; /* Un tono más oscuro del color principal para el hover */
 }
 
+/* Estilo para las imágenes del producto */
+.product-image {
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  max-width: 100%; /* Asegúrate de que la imagen no se salga del contenedor */
+  height: auto; /* Mantén la proporción de la imagen */
+}
+
 /* Importar la fuente Poppins desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
