@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            const phonePattern = /^[0-9]{10,15}$/;
+            const phonePattern = /^[0-9]{10}$/;
             if (!phonePattern.test(phone)) {
-                alert("Por favor, ingrese un número de teléfono válido (solo dígitos, entre 10 y 15 caracteres).");
+                alert("Por favor, ingrese un número de teléfono válido (solo dígitos, de 10 caracteres).");
                 return;
             }
 

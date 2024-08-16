@@ -12,13 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const minPriceInput = document.getElementById('minPriceInput');
     const maxPriceInput = document.getElementById('maxPriceInput');
     const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
-
-
-    // Verifica que el elemento de selección de categoría esté en el DOM
-    if (!filterCategoryInput) {
-        console.error('Elemento filterCategoryInput no encontrado en el DOM');
-        return;
-    }
+    
 
     if (loggedInUser) {
         // Mostrar el nombre y rol en el panel de control
@@ -76,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     productElement.addEventListener('click', function () {
                         const productId = this.getAttribute('data-id');
                         const url = `./productDetails.html?id=${productId}`;
-                        console.log('Redirigiendo a:', url); // Imprime la URL en la consola
                         window.location.href = url;
                     });
                 });

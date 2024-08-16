@@ -17,6 +17,7 @@
 
 /* Estilo global del body */
 body {
+
   background-color: var(--background-color); /* Fondo del body */
   color: var(--text-color); /* Color del texto */
   font-family: 'Poppins', sans-serif; /* Fuente del texto */
@@ -198,6 +199,7 @@ body {
     padding: 15px;
     margin-bottom: 15px;
   }
+
 
 /* Estilo para el contenedor de los elementos dentro de los detalles del producto */
 .productDetail-container {

@@ -25,7 +25,7 @@ export function showProductDetails(productId) {
                 productCategoryElement.textContent = product.category;
 
                 // Aquí se muestra la imagen utilizando la URL correcta
-                productImageElement.innerHTML = `<img src="${product.url}" alt="${product.name}" class="product-image" />`;
+                productImageElement.innerHTML = `<img src="${product.url}"   width="300" alt="${product.name}" class="product-image" />`;
             } else {
                 console.error('Elementos para mostrar detalles del producto no encontrados en el DOM');
             }
