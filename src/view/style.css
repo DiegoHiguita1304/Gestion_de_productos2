@@ -187,25 +187,43 @@ body {
   padding: 10px 20px;
 }
 
-/* Estilo para el botón "Volver a la lista" */
-#back-to-list {
-    width: 100%;
+/* Estilo para el contenedor de detalles del producto */
+.product-details {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #ddd;
     padding: 15px;
-    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+/* Estilo para el contenedor de los elementos dentro de los detalles del producto */
+.productDetail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón de volver a la lista */
+.btn-back {
     background-color: #ff512f;
     color: #ffffff;
-    font-size: 18px;
+    padding: 12px 24px;
+    font-size: 16px;
     font-weight: 700;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  #back-to-list:hover {
-    background-color: #e64a19; /* Cambia el color de fondo al pasar el cursor */
-  }
-  
+    display: block;
+    margin: 20px auto; /* Centra el botón horizontalmente */
+}
+
+.btn-back:hover {
+    background-color: #e64a19; /* Un tono más oscuro del color principal para el hover */
+}
 
 /* Importar la fuente Poppins desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
