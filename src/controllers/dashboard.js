@@ -1,4 +1,4 @@
-import { loadProducts, filterProducts as filterProductsFromModel } from '../Models/productModel.js';
+import { loadProducts, filterProducts as filterProductsFromModel } from '../models/productModel.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM completamente cargado y analizado');

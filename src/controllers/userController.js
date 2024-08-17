@@ -1,4 +1,4 @@
-import { registerUser, findUser } from '../Models/userModel.js';
+import { registerUser, findUser } from '../models/userModel.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener referencias a los elementos del DOM

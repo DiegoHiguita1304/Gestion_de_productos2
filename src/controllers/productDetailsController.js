@@ -1,4 +1,4 @@
-import { loadProducts } from '../Models/productModel.js';
+import { loadProducts } from '../models/productModel.js';
 
 export function showProductDetails(productId) {
     loadProducts().then(products => {
