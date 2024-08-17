@@ -21,10 +21,13 @@ src/
 |
 |
 │
+
 ├── controllers/
 |
 |
-│ ├── dashboardController.js
+
+│ 
+|├── dashboardController.js
 | |
 │ ├── productDetailsController.js
 | |
