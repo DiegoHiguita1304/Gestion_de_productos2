@@ -18,25 +18,43 @@ Estructura del proyecto
 * El proyecto está estructurado según el patrón MVC (Modelo-Vista-Controlador):
 
 src/
+|
+|
 │
 ├── controllers/
+|
+|
 │ ├── dashboardController.js
+| |
 │ ├── productDetailsController.js
+| |
 │ ├── userController.js
+|
 │
 ├── data/
+| |
 │ └── data.json
+|
 │
 ├── models/
+| |
 │ ├── productDetails.js
+| |
 │ ├── productModel.js
+| |
 │ └── userModel.js
+|
 │
 ├── view/
+| |
 │ ├── dashboard.html
+| |
 │ ├── index.html
+| |
 │ ├── productDetails.html
+| |
 │ └── style.css
+|
 │
 └── README.md
 
