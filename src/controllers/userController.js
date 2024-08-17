@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             localStorage.setItem('loggedInUser', JSON.stringify(user));
-            window.location.href = '/src/view/dashboard.html';
+            window.location.href = 'src/view/dashboard.html';
         });
     }
 });
