@@ -17,6 +17,7 @@ Estructura del proyecto
 
 * El proyecto está estructurado según el patrón MVC (Modelo-Vista-Controlador):
 
+
 ## Controllers: 
 * Contiene los controladores que manejan la lógica de negocio y la interacción entre la vista y el modelo.
 
