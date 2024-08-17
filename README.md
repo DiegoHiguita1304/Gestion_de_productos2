@@ -124,3 +124,5 @@ src/
 
 
 **Diego-Higuita/**  Encargado de desarrollar esta aplicación.
+
+[link-figma]: https://www.figma.com/design/GSwZPjETAJkeLRS3z4kEhj/Untitled?node-id=16-63&t=FGA4Ah95Uiu1SA2f-0
